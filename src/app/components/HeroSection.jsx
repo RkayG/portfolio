@@ -45,7 +45,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Crafting innovative digital solutions with a passion for clean code and cutting-edge technologies. Let's build the future together.
+              Crafting innovative digital solutions with a passion for clean code and cutting-edge technologies. Let&apos;s build the future together.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/#contact">

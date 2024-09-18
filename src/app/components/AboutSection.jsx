@@ -56,7 +56,7 @@ const AboutSection = () => {
               About Me
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed">
-              I'm a passionate full stack web developer with a knack for creating interactive and responsive web applications. My expertise spans JavaScript, React, Node.js, and more. I thrive on challenges and continuously expand my skill set. Let's build something amazing together!
+              I&apos;m a passionate full stack web developer with a knack for creating interactive and responsive web applications. My expertise spans JavaScript, React, NodeJs, and more. I thrive on challenges and continuously expand my skill set. Let&apos;s build something amazing together!
             </p>
             <div className="flex flex-wrap gap-4">
               {TAB_DATA.map((tab) => (
