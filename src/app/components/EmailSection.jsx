@@ -5,37 +5,29 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
+const apiKey = process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY
+
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const formData = new FormData(e.target);
+    
+    formData.append('access_key', {apiKey}); // Replace with your Web3Forms access key
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    const data = await response.json();
 
-    if (response.status === 200) {
+    if (data.success) {
       console.log("Message sent.");
       setEmailSubmitted(true);
+    } else {
+      console.log("Error sending message.");
     }
   };
 

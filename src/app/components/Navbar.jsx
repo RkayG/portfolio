@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from 'lucide-react';
+import Image from "next/image";
 
 const navLinks = [
   { title: "About", path: "#about" },
@@ -24,18 +25,22 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
-      scrolled ? 'bg-gray-900 shadow-lg' : 'bg-transparent'
+    <nav className={`fixed top-0 h-[88px] left-0 right-0 z-10 transition-all duration-300 ${
+      scrolled ? 'bg-black shadow-lg' : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="flex items-center justify-between h-16 ">
           <Link href="/">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
             >
-              LOGO
+              <Image
+                src="/images/logo3.png"
+                width={112}
+                height={0}
+            />
             </motion.div>
           </Link>
           <div className="hidden md:block">
@@ -73,7 +78,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-gray-800"
+            className="md:hidden bg-black"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navLinks.map((link, index) => (
