@@ -57,7 +57,7 @@ const HeroSection = () => {
                   Hire Me
                 </motion.button>
               </Link>
-              <Link href="/">
+              {/* <Link href="/">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 >
                   Download CV
                 </motion.button>
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
           <motion.div
