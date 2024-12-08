@@ -31,11 +31,11 @@ const HeroSection = () => {
                 sequence={[
                   "Gladness",
                   1000,
-                  "Web Developer",
+                  "a Web Developer",
                   1000,
-                  "Software Developer",
+                  "a Software Developer",
                   1000,
-                  "Blockchain Developer",
+                  "a Blockchain Developer",
                   1000,
                 ]}
                 wrapper="span"
@@ -48,7 +48,7 @@ const HeroSection = () => {
               Crafting innovative digital solutions with a passion for clean code and cutting-edge technologies. Let&apos;s build the future together.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/#contact">
+              <Link href="/contact">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
