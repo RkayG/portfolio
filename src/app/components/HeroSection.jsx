@@ -74,7 +74,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <div className="w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] relative">
+            /** <div className="w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] relative">
               <Image
                 src="/images/hero-image3.jpg"
                 alt="Gladness profile"
@@ -94,7 +94,7 @@ const HeroSection = () => {
                 }}
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-600 opacity-30"
               ></motion.div>
-            </div>
+            </div> */
           </motion.div>
         </div>
       </div>
