@@ -210,7 +210,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 border-2 border-gray-600 text-white font-semibold rounded-full hover:border-blue-400 hover:text-blue-400 transition-all duration-300 backdrop-blur-sm bg-white/5"
-                onClick={() => window.location.href = '#projects'
+                onClick={() => window.location.href = '#projects'}
               >
                 View My Work
               </motion.button>
