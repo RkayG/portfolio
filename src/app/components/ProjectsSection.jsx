@@ -7,15 +7,33 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "React, NextJs, CSS",
-    image: "/images/projects/1.png",
+    title: "SmartMention",
+    description: "Social Media Mention Analysis Tool",
+    image: "/images/projects/sm-preview.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    //gitUrl: "/",
+    previewUrl: "https://smartmention.com",
   },
   {
     id: 2,
+    title: "PrimeGrills: Restaurant Management System",
+    description: "Vite, React, Django, Tailwind CSS, PostgreSQL, RabbitMq, Paystack API",
+    image: "/images/projects/prime.png",
+    tag: ["All", "Web"],
+    //gitUrl: "/",
+    //previewUrl: "https://smartmention.com",
+  },
+  {
+    id: 3,
+    title: "AdFriend: Ad Interceptor and Movie Recommender",
+    description: "React, Tailwind CSS, Vanilla JS, Typescript, Webpack, TMDB API, Manifest V3",
+    image: "/images/projects/adfriend.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RkayG/ad-friend",
+    //previewUrl: "https://smartmention.com",
+  },
+  {
+    id: 4,
     title: "Web3Fruity: Crypto Income Discovery Platform",
     description: "NextJs, Tailwind CSS, NodeJs, MongoDB, Contentful CMS, Coingecko API",
     image: "/images/projects/a.png",
@@ -24,7 +42,7 @@ const projectsData = [
     previewUrl: "https://www.web3fruity.com/",
   },
   {
-    id: 3,
+    id: 5,
     title: "Esplora: Ethereum Blockchain Explorer",
     description: "HTML, Vanilla JS, Tailwind CSS, Coingecko API, Alchemy API",
     image: "/images/projects/esplora.png",
@@ -33,7 +51,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Imuzic: Spotify Recommendation System",
     description: "Streamlit, Python, Tailwind CSS, Spotipy API",
     image: "/images/projects/imuzic.png",
@@ -42,7 +60,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 5,
+    id: 7,
     title: "imuzic V2",
     description: "Flask, JavaScript, Python, Spotipy API, HTML, CSS",
     image: "/images/projects/5.png",
@@ -51,7 +69,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 6,
+    id: 8,
     title: "Simple Shell: Implementation of the Linux Shell",
     description: "C Language",
     image: "/images/projects/simple-shell.png",
@@ -60,7 +78,7 @@ const projectsData = [
    // previewUrl: "/",
   },
   {
-    id: 6,
+    id: 9,
     title: "Monty: Bytecode Interpreter",
     description: "C Language",
     image: "/images/projects/monty.png",
