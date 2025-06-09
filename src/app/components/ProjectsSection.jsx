@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/projects/adfriend.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/RkayG/ad-friend",
-    //previewUrl: "https://smartmention.com",
+    previewUrl: "https://screenrec.com/share/XRNehEHpSc",
   },
   {
     id: 4,
