@@ -54,6 +54,7 @@ const EmailSection = () => {
           <Link href="https://www.linkedin.com/in/gladness-rufus/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
+          
         </div>
       </div>
       {/* <div>
