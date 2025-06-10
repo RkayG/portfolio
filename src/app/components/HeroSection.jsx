@@ -103,7 +103,7 @@ const HeroSection = () => {
                   variants={itemVariants}
                   className="text-blue-400 font-medium text-base md:text-lg tracking-wide uppercase"
                 >
-                  Hey there! Welcome to my corner of the web
+                  Hey there! Welcome to my Crib
                 </motion.p>
                 
                 <motion.h1
