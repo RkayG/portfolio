@@ -120,7 +120,7 @@ const Contact = () => {
     { name: 'name', type: 'text', label: 'Full Name', icon: <User className="w-5 h-5" />, required: true },
     { name: 'email', type: 'email', label: 'Email Address', icon: <Mail className="w-5 h-5" />, required: true },
     { name: 'subject', type: 'text', label: 'Subject', icon: <MessageSquare className="w-5 h-5" />, required: true },
-    { name: 'website', type: 'url', label: 'Website (Optional)', icon: <Globe className="w-5 h-5" />, required: false }
+    { name: 'website', type: 'text', label: 'Website (Optional)', icon: <Globe className="w-5 h-5" />, required: false }
   ];
 
   return (
@@ -134,12 +134,12 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 mb-6">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Have a project in mind or want to collaborate? I'd love to hear from you. 
-            Let's create something amazing together.
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you. 
+            Let&apos;s create something amazing together.
           </p>
         </motion.div>
 
@@ -202,15 +202,27 @@ const Contact = () => {
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
-                  <span>Fast response within 24 hours</span>
+                  <span>
+                    You get a <span className="font-semibold">fast, friendly, and honest</span> response always.
+                  </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
-                  <span>Professional and reliable service</span>
+                  <span>
+                    I treat every project as if it&apos;s my own, with <span className="font-semibold">care and attention to detail</span>.
+                  </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
-                  <span>Custom solutions for your needs</span>
+                  <span>
+                    <span className="font-semibold">Creative solutions</span> tailored to your unique needs and goals.
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                  <span>
+                    Let&apos;s build something <span className="font-semibold">impactful</span> together.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -244,7 +256,7 @@ const Contact = () => {
                         onChange={handleChange}
                         onFocus={() => setFocusedField(field.name)}
                         onBlur={() => setFocusedField('')}
-                        className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+                        className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 text-gray-900"
                         placeholder={`Enter your ${field.label.toLowerCase()}`}
                         required={field.required}
                       />
@@ -273,7 +285,7 @@ const Contact = () => {
                         onChange={handleChange}
                         onFocus={() => setFocusedField(field.name)}
                         onBlur={() => setFocusedField('')}
-                        className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+                        className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 text-gray-900"
                         placeholder={`Enter your ${field.label.toLowerCase()}`}
                         required={field.required}
                       />
@@ -300,7 +312,7 @@ const Contact = () => {
                     onFocus={() => setFocusedField('message')}
                     onBlur={() => setFocusedField('')}
                     rows={6}
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 resize-none"
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 resize-none text-gray-900"
                     placeholder="Tell me about your project or how I can help you..."
                     required
                   />

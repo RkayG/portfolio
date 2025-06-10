@@ -71,7 +71,7 @@ const AboutSection = () => {
       { threshold: 0.1 }
     );
 
-    const section = document.getElementById('about-section');
+    const section = document.getElementById('about');
     if (section) observer.observe(section);
 
     return () => observer.disconnect();
@@ -208,20 +208,20 @@ const AboutSection = () => {
               </h3>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  I'm a passionate full-stack developer with expertise in modern web technologies 
+                  I&apos;m a passionate full-stack developer with expertise in modern web technologies 
                   and blockchain development. My journey in software engineering has equipped me 
                   with a comprehensive skill set spanning both traditional web development and 
                   cutting-edge blockchain technologies.
                 </p>
                 <p>
-                  With a strong foundation in JavaScript ecosystems and backend technologies, 
-                  I specialize in building scalable, user-centric applications that solve 
-                  real-world problems. My experience includes developing everything from 
+                  With a strong foundation in JavaScript and Python ecosystems, 
+                  I build scalable applications that solve 
+                  real-life problems. My experience includes developing everything from 
                   responsive web applications to smart contracts and DeFi protocols.
                 </p>
                 <p>
                   I thrive on continuous learning and staying at the forefront of technology 
-                  trends, always seeking new challenges that push the boundaries of what's possible.
+                  trends, always seeking new challenges that push the boundaries of what&apos;s possible.
                 </p>
               </div>
             </div>
