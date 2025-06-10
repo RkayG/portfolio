@@ -25,7 +25,7 @@ const TAB_DATA = [
       {
         institution: "ALX Africa | Holberton University",
         program: "Software Engineering Program",
-        period: "2023 - 2024",
+        period: "2022 - 2024",
         description: "Comprehensive software engineering curriculum focusing on full-stack development"
       },
       {
