@@ -1,3 +1,4 @@
+
 "use client"
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -145,7 +146,7 @@ const projectsData = [
   {
     id: 3,
     title: "AdFriend: Ad Interceptor and Movie Recommender",
-    description: "Chrome extension that blocks advertisements while providing personalized movie recommendations using TMDB API.",
+    description: "Chrome extension that blocks advertisements while providing personalized movie recommendations.",
     image: "/images/projects/adfriend2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/RkayG/ad-friend",
