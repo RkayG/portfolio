@@ -132,13 +132,16 @@ const projectsData = [
     tag: ["All", "Web"],
     previewUrl: "https://smartmention.com",
   },
-  {
+{
     id: 2,
-    title: "PrimeGrills: Restaurant Management System",
-    description: "Full-stack micro-service restaurant management platform with order processing, inventory management, and integrated payment solutions using modern web technologies.",
-    image: "/images/projects/prime.png",
-    tag: ["All", "Web"],
+    title: "Web3Fruity: Crypto Income Discovery Platform",
+    description: "Comprehensive cryptocurrency income discovery platform featuring real-time market data, DeFi yield farming opportunities, and portfolio tracking.",
+    image: "/images/projects/web3fruity.png",
+    tag: ["All", "Web", "Blockchain"],
+    gitUrl: "https://github.com/RkayG/Web3Fruity",
+    previewUrl: "https://www.web3fruity.com/",
   },
+  
   {
     id: 3,
     title: "AdFriend: Ad Interceptor and Movie Recommender",
@@ -150,12 +153,10 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Web3Fruity: Crypto Income Discovery Platform",
-    description: "Comprehensive cryptocurrency income discovery platform featuring real-time market data, DeFi yield farming opportunities, and portfolio tracking.",
-    image: "/images/projects/web3fruity.png",
-    tag: ["All", "Web", "Blockchain"],
-    gitUrl: "https://github.com/RkayG/Web3Fruity",
-    previewUrl: "https://www.web3fruity.com/",
+    title: "PrimeGrills: Restaurant Management System",
+    description: "Full-stack micro-service restaurant management platform with order processing, inventory management, and integrated payment solutions using modern web technologies.",
+    image: "/images/projects/prime.png",
+    tag: ["All", "Web"],
   },
   {
     id: 5,
